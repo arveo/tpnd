@@ -1,0 +1,108 @@
+/*
+Theme Name: Core
+Description: Premium Template for Photography Portfolio
+Version: 3.5
+Author: Peerapong Pulpipatnan
+Author URI: http://themeforest.net/user/peerapong
+*/
+
+@import "css/screen.css";
+
+
+/* TGS EDIT - Custom Styles */
+body .nav, body .top_right {
+	margin-top: 70px;
+}
+
+body #fancybox-outer {
+	background-color: #000;
+}
+
+#content_wrapper, .rm_container h2, .rm_container ul li, .rm_mask_right, .rm_mask_left, .rm_corner_right, .rm_corner_left {
+	background: #000 !important;
+}
+
+body div.frame {
+	border: 10px solid white;
+}
+
+body input[type="text"]:focus, body input[type="password"]:focus, body select:focus, body textarea:focus {
+	border: 1px solid #333 !important;
+}
+
+.page-template-contact-php .sidebar_widget .widget_text li {
+	border-bottom: none !important;
+	padding-bottom: 0px !important;
+}
+
+body ul.products li.product h3 {
+	font-size: 1.4em;
+	text-transform: capitalize;
+}
+
+
+.related ul.products li.product, 
+.related ul li.product, 
+.upsells.products ul.products li.product, 
+.upsells.products ul li.product
+.related ul.products li.product img, 
+.related ul li.product img, 
+.upsells.products ul.products li.product img, 
+.upsells.products ul li.product img {
+	width: auto !important;
+}
+
+.woocommerce-product-sidebar,
+.woocommerce-shop-sidebar {
+	opacity: 0.2;
+}
+
+.woocommerce-product-sidebar:hover,
+.woocommerce-shop-sidebar:hover {
+	opacity: 1;
+}
+
+body input[type="submit"], 
+body input[type="button"], 
+body a.button, a.comment-reply-link {
+	margin: 0;
+	line-height: 1em;
+	cursor: pointer;
+	position: relative;
+	font-family: inherit;
+	text-decoration: none;
+	overflow: visible;
+	padding: 6px 10px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	left: auto;
+	text-shadow: 0 1px 0 #ffffff;
+	color: #5e5e5e;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+	border: 1px solid #c7c0c7;
+	background: #f7f6f7;
+	background: -webkit-gradient(linear,left top,left bottom,from(#f7f6f7),to(#dfdbdf));
+	background: -webkit-linear-gradient(#f7f6f7,#dfdbdf);
+	background: -moz-linear-gradient(center top,#f7f6f7 0%,#dfdbdf 100%);
+	background: -moz-gradient(center top,#f7f6f7 0%,#dfdbdf 100%);
+	-webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,0.075), inset 0 1px 0 rgba(255,255,255,0.3), 0 1px 2px rgba(0,0,0,0.1);
+	-moz-box-shadow: inset 0 -1px 0 rgba(0,0,0,0.075), inset 0 1px 0 rgba(255,255,255,0.3), 0 1px 2px rgba(0,0,0,0.1);
+	box-shadow: inset 0 -1px 0 rgba(0,0,0,0.075), inset 0 1px 0 rgba(255,255,255,0.3), 0 1px 2px rgba(0,0,0,0.1);
+}
+
+a.button, 
+button.button, 
+input.button, 
+#respond input#submit, 
+#content input.button {
+	line-height: 1.3em !important;
+}
+/*
+#footer .footer-search {
+	border: 5px solid #fff;
+	padding: 10px;
+}
+*/
