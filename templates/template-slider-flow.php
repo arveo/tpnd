@@ -34,7 +34,7 @@
 	</div>
 </div>
 
-<div id="fancy_gallery" style="display:none">
+<div id="1fancy_gallery" style="display:none">
 <?php
 $pp_display_image_title = get_option('pp_display_image_title');
 
@@ -43,7 +43,7 @@ foreach($all_photo_arr as $key => $photo)
 	$full_image_url = wp_get_attachment_image_src( $photo->ID, 'full' );
 	$small_image_url = wp_get_attachment_image_src( $photo->ID, 'large' );
 ?>
-<a id="fancy_gallery<?php echo $key; ?>" href="<?php echo $full_image_url[0]; ?>" rel="gallery" <?php if(!empty($pp_display_image_title)) { ?> title="<?php echo $photo->post_title; ?>" <?php } ?>><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/white_slider_handle.png" /></a>
+    <a class="" id="1fancy_gallery<?php echo $key; ?>" href="<?php echo $full_image_url[0]; ?>" rel="gallery" <?php if(!empty($pp_display_image_title)) { ?> title="<?php echo $photo->post_title; ?>" <?php } ?>><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/white_slider_handle.png" /></a>
 <?php
 }
 ?>

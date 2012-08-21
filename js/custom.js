@@ -384,10 +384,31 @@ $j(document).ready(function(){
 	
 	
 	
-	// Test custom jquery
+	// TGS Edit - Add custom JS
+	// * Add first word in filename to the car-choice div, but only on the hone page	
 	$j('.home img.diapo').live('click', function(e) {
-		e.preventDefault();
-		$j('.home img.current').fadeOut('fast');
+		//alert('hello');
+        e.preventDefault();
+        $image = e.target.src;
+        $image = $image.replace(/^.*\/|\.[^.]*$/g, '');
+        $image = $image.split('-');
+        $image = $image[0];
+		
+        if ($image == 'undefined' || $image =='') {
+            $j('.car-choice').text('Other');
+        } else {
+            $j('.car-choice').text($image);
+        }		
+		
+		
+		/* Grab the name of that car, and append it in the href of the search button on the home page */
+		var pathName = $j(location).attr('href');
+		console.log(pathName);
+		$j('.footer-search-button').click( function() {
+				$redirectPath = pathName + 'product-category/' + $image + '/';
+				console.log($redirectPath);
+				$j('.footer-search-button').attr('href', $redirectPath);
+		});
 	});
 	
 });

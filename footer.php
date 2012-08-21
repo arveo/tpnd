@@ -12,13 +12,14 @@
 	<div id="footer">
     <?php if (is_home() || is_front_page()) : ?>
     <div class="footer-search">
-    	<h2>We Make Cars Awesome. Lets Start With Yours.</h2>
+    	<h3>We Make Cars <span class="highlight">Awesome. Lets Start</span> With Yours.</h3>
         <div class="search-box">
-        	<div class="car-make"></div>
-            <div class="cat-select"></div>
-            <a href="#" class="button footer-search-button">Customise</a>
+        	<div class="car-make">Car Make: <span class="car-choice">Other</span></div>
+            <a href="<?php echo (get_bloginfo('url') . '/shop') ?>" class="button footer-search-button">Customise</a>
         </div>
     </div>
+    
+    <br class="clear"/>
     <?php endif; ?>
 	    <?php
 	    	/**

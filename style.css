@@ -10,8 +10,20 @@ Author URI: http://themeforest.net/user/peerapong
 
 
 /* TGS EDIT - Custom Styles */
+html body {
+	background: #000 url(http://topend.tinygiantstudios.co.za/wp-content/uploads/2012/08/texture-bg.jpg) repeat;
+}
+
 body .nav, body .top_right {
 	margin-top: 70px;
+}
+
+body.home #top_bar {
+	padding-bottom: 0;
+}
+
+body #footer, body #top_bar {
+	background: transparent;
 }
 
 body #fancybox-outer {
@@ -30,9 +42,14 @@ body input[type="text"]:focus, body input[type="password"]:focus, body select:fo
 	border: 1px solid #333 !important;
 }
 
-.page-template-contact-php .sidebar_widget .widget_text li {
+.page-template-page_r-php .sidebar_widget .widget_text li {
 	border-bottom: none !important;
 	padding-bottom: 0px !important;
+}
+
+.page-template-page_r-php .sidebar_widget p {
+	padding: 0;
+	margin: 0;
 }
 
 body ul.products li.product h3 {
@@ -40,6 +57,19 @@ body ul.products li.product h3 {
 	text-transform: capitalize;
 }
 
+body #content_wrapper {
+	overflow: hidden;
+}
+
+body .page_caption {
+	background: #000;
+	width: 100%
+}
+
+body .page_caption h1 {
+	width: 960px;
+	margin: 0 auto;
+}
 
 .related ul.products li.product, 
 .related ul li.product, 
@@ -100,9 +130,119 @@ input.button,
 #content input.button {
 	line-height: 1.3em !important;
 }
-/*
-#footer .footer-search {
-	border: 5px solid #fff;
-	padding: 10px;
+
+body #imageFlow {
+	top: 20%;
 }
-*/
+
+#footer .footer-search {
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.search-box {
+	overflow: hidden;
+	margin: 0 240px;
+}
+
+#footer h3 {
+	color: #999;
+}
+
+#footer h3 .highlight {
+	color: #fff;
+}
+
+.car-make, .cat-select {
+	padding: 10px;
+	margin: 10px;
+	border: 3px solid #000;
+	background: #000;
+	-webkit-border-radius: 5px;
+    border-radius: 5px;
+	-webkit-box-shadow:  0px 0px 3px 3px rgba(255, 255, 255, 0.1);
+    box-shadow:  0px 0px 3px 3px rgba(255, 255, 255, 0.1);
+}
+
+.car-make, .cat-select, .footer-search-button {
+	float: left;
+}
+
+.car-make, .cat-select {
+	width: 57%;
+}
+
+.car-choice, .cat-choice {
+	font-size: 24px;
+	color: #fff;
+	margin: 0 15px;
+}
+
+body .button.footer-search-button {
+	margin: 10px;
+	padding: 15px 20px;
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 2em;
+	display: block;
+	-webkit-border-radius: 5px;
+    border-radius: 5px;
+	-webkit-box-shadow:  0px 0px 3px 3px rgba(0, 0, 0, 0.7);
+    box-shadow:  0px 0px 3px 3px rgba(0, 0, 0, 0.7);
+}
+
+body div.product .woocommerce_tabs ul.tabs li, 
+body #content div.product .woocommerce_tabs ul.tabs li {
+	margin: 0 0 4px 0;
+	border: none;
+	-webkit-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border-radius: 4px;
+}
+
+body div.product .woocommerce_tabs ul.tabs li a, 
+body #content div.product .woocommerce_tabs ul.tabs li a {
+	padding: 0.3em 0;
+}
+
+body div.product .woocommerce_tabs ul.tabs li.active a, 
+body #content div.product .woocommerce_tabs ul.tabs li.active a {
+	padding: 0.5em 0;
+}
+
+body div.product .woocommerce_tabs ul.tabs li.active, 
+body #content div.product .woocommerce_tabs ul.tabs li.active {
+	background: #fff;
+	z-index: 2;
+	border: none;
+	background: #46B1E1;
+	background: -webkit-gradient(linear,left top,left bottom,from(#46B1E1),to(#229BD2));
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.6);
+	box-shadow: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	-webkit-border-bottom-left-radius: 0;
+	-webkit-border-bottom-right-radius: 0;
+	-moz-border-radius-bottomleft: 0;
+	-moz-border-radius-bottomright: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+body div.product .woocommerce_tabs ul.tabs li::before, 
+body div.product .woocommerce_tabs ul.tabs li::after,
+body #content div.product .woocommerce_tabs ul.tabs li::before, 
+body #content div.product .woocommerce_tabs ul.tabs li::after {
+	 border: none !important;
+	 box-shadow: none !important;
+}
+
+body div.product .woocommerce_tabs ul.tabs::before, 
+body #content div.product .woocommerce_tabs ul.tabs::before {
+	border-bottom: 2px solid #229BD2;
+}

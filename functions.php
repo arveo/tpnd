@@ -967,5 +967,19 @@ if ( function_exists ('register_sidebar')) {
 
 
 /* =================== $TGS Edit - Remove Breadcrumbs */
-remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0);
+	remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0);
+
+
+
+/* =================== $TGS Edit - Enqueue Chosen Styles + Javascript */
+function add_child_scripts(){
+	
+	wp_register_script('chosen', 
+	get_bloginfo('stylesheet_directory').'/js/chosen.jquery.min.js', array('jquery'),'1.0');
+	wp_enqueue_script('chosen');
+	
+	wp_enqueue_style( 'chosenstyles', get_bloginfo('stylesheet_directory'). '/css/chosen.css' );
+	
+}
+add_action('wp_enqueue_scripts', 'add_child_scripts');
 ?>
