@@ -416,7 +416,22 @@ $j(document).ready(function(){
 	
 	
 	// TGS EDIT - Add chosen.js styling to select widget on shop page
-	$j('.widget_layered_nav #dropdown_layered_nav_brands').addClass('chzn-select');
-	$j('.widget_product_categories #dropdown_product_cat').addClass('chzn-select');
+	$j('.widget_layered_nav #dropdown_layered_nav_brands').addClass('chzn-select')
+	$j('.widget_product_categories #dropdown_product_cat').addClass('chzn-select')
+	
 	$j(".chzn-select").chosen();
+	
+	$j('#dropdown_product_cat').find('.level-1').each( function() {
+		var trimSelect = $j(this).text();
+		$j(this).text(trimSelect.trim()).trigger("liszt:updated");
+		console.log($j(this).text(trimSelect.trim()));
+	});
+	
+	$j('.chzn-results').find('li.level-1').each( function() {
+		var trimSelect = $j(this).text();
+		$j(this).text(trimSelect.trim()).trigger("liszt:updated");
+		console.log($j(this).text(trimSelect.trim()));
+	});
+	
+	
 });

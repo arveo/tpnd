@@ -57,8 +57,18 @@ body ul.products li.product h3 {
 	text-transform: capitalize;
 }
 
+body #content_wrapper:before,
+body #content_wrapper:after {
+    content: "";
+    display: table;
+} 
+
+body #content_wrapper:after {
+    clear: both;
+}
+
 body #content_wrapper {
-	overflow: hidden;
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
 }
 
 body .page_caption {
@@ -84,7 +94,7 @@ body .page_caption h1 {
 
 .woocommerce-product-sidebar,
 .woocommerce-shop-sidebar {
-	opacity: 0.2;
+	/*opacity: 0.2;*/
 }
 
 .woocommerce-product-sidebar:hover,
@@ -245,4 +255,27 @@ body #content div.product .woocommerce_tabs ul.tabs li::after {
 body div.product .woocommerce_tabs ul.tabs::before, 
 body #content div.product .woocommerce_tabs ul.tabs::before {
 	border-bottom: 2px solid #229BD2;
+}
+
+/* Chosen.js overrides */
+.widget_layered_nav #dropdown_layered_nav_brands,
+.widget_product_categories #dropdown_product_cat {
+	width: 100%;
+}
+
+body .chzn-container-single .chzn-single {
+	padding: 5px 10px;
+}
+
+body .chzn-container-single .chzn-single div b {
+	margin: 5px -10px;
+}
+
+body #page_content_wrapper .sidebar .content .sidebar_widget li ul li:first-child, 
+body #page_content_wrapper .sidebar .content .sidebar_widget li ul li {
+	border: none !important;
+}
+
+body .chzn-results li.level-1 {
+	padding-left: 20px !important;
 }
