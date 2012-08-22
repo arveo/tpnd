@@ -85,6 +85,18 @@ get_header('shop'); ?>
 			<?php endif; ?>
 		
 		<?php endif; ?>
+        
+        
+		<?php 
+			/** 
+			 * woocommerce_pagination hook
+			 *
+			 * @hooked woocommerce_pagination - 10
+			 * @hooked woocommerce_catalog_ordering - 20
+			 */		
+			do_action( 'woocommerce_pagination' ); 
+		?>
+        
 		
          </div>
 	     <!-- End main content -->
@@ -102,17 +114,6 @@ get_header('shop'); ?>
         
             </div>
         </div>
-        
-
-		<?php 
-			/** 
-			 * woocommerce_pagination hook
-			 *
-			 * @hooked woocommerce_pagination - 10
-			 * @hooked woocommerce_catalog_ordering - 20
-			 */		
-			do_action( 'woocommerce_pagination' ); 
-		?>
 
 	<?php
 		/** 

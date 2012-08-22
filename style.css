@@ -94,14 +94,21 @@ body .page_caption h1 {
 }
 
 .related ul.products li.product, 
-.related ul li.product, 
-.upsells.products ul.products li.product, 
-.upsells.products ul li.product
+.related ul li.product {
+	width: 25% !important;
+}
+
+body #page_content_wrapper ul {
+	margin: 10px 0;
+}
+
+body .upsells.products ul.products li.product, 
+body .upsells.products ul li.product,
+body .upsells.products ul.products li.product img, 
+body .upsells.products ul li.product img,
 .related ul.products li.product img, 
-.related ul li.product img, 
-.upsells.products ul.products li.product img, 
-.upsells.products ul li.product img {
-	width: auto !important;
+.related ul li.product img {
+	width: auto !important;	
 }
 
 .woocommerce-product-sidebar,
@@ -448,3 +455,23 @@ body span.onsale {
 	background: linear-gradient(to bottom,  #46b1e1 0%,#229bd2 100%);
 }
 
+div.product .woocommerce_tabs, 
+#content div.product .woocommerce_tabs {
+	border-bottom: 1px solid #fff;
+}
+
+.woocommerce_ordering {
+	float: right;
+}
+
+body ul.products li.product a img {
+	height: 150px;
+}
+
+body a.button.added::before, 
+body button.button.added::before, 
+body input.button.added::before, 
+body #respond input#submit.added::before,
+body #content input.button.added::before {
+	background: url(images/success.png) no-repeat;
+}
