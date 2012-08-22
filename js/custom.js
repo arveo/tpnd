@@ -427,17 +427,16 @@ $j(document).ready(function(){
 	$j('#dropdown_product_cat').find('.level-1').each( function() {
 		var trimSelect = $j(this).text();
 		$j(this).text(trimSelect.trim()).trigger("liszt:updated");
-		console.log($j(this).text(trimSelect.trim()));
 	});
 	
 	$j('.chzn-results').find('li.level-1').each( function() {
 		var trimSelect = $j(this).text();
 		$j(this).text(trimSelect.trim()).trigger("liszt:updated");
-		console.log($j(this).text(trimSelect.trim()));
 	});
 	
 	// Fixed multiple dropdown incorrectly stacking onto one another
-	$('.chzn-container').each(function(i){
-  		$(this).closest('div').css('z-index', 999-i);
+	$j('.chzn-container').each(function(i){
+  		$j(this).closest('div').css('z-index', 999-i);
 	});
+
 });

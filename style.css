@@ -14,12 +14,24 @@ html body {
 	background: #000 url(http://topend.tinygiantstudios.co.za/wp-content/uploads/2012/08/texture-bg.jpg) repeat;
 }
 
+::-webkit-input-placeholder {
+   color: #535353;
+}
+
+:-moz-placeholder {  
+   color: #535353;  
+}
+
 body .nav, body .top_right {
 	margin-top: 70px;
 }
 
 body.home #top_bar {
 	padding-bottom: 0;
+}
+
+body .social_wrapper {
+	display: none;
 }
 
 body #footer, body #top_bar {
@@ -94,7 +106,7 @@ body .page_caption h1 {
 
 .woocommerce-product-sidebar,
 .woocommerce-shop-sidebar {
-	/*opacity: 0.2;*/
+	opacity: 0.2;
 }
 
 .woocommerce-product-sidebar:hover,
@@ -271,6 +283,14 @@ body .chzn-container-single .chzn-single div b {
 	margin: 5px -10px;
 }
 
+body .chzn-container .chzn-results {
+	margin: 5px !important;
+}
+
+body .chzn-container .chzn-results li {
+	text-align: left !important;
+}
+
 body #page_content_wrapper .sidebar .content .sidebar_widget li ul li:first-child, 
 body #page_content_wrapper .sidebar .content .sidebar_widget li ul li {
 	border: none !important;
@@ -294,3 +314,137 @@ body .chzn-container .chzn-results .highlighted {
 body .widget_layered_nav {
 	overflow: visible;
 }
+
+/* Checkout page */
+.woocommerce-cart .sidebar_content p {
+	display: none;
+}
+
+.woocommerce-cart .sidebar_content table.shop_table p {
+	display: inline;
+}
+
+body table.shop_table {
+	border: 1px solid #333;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+body table.shop_table td {
+	border-top: 1px solid #333;
+}
+
+.cart-collaterals .cart_totals table {
+	float: right;
+}
+
+body .quantity, #content .quantity {
+	margin: 0;
+}
+
+body table.cart a.remove, 
+body #content table.cart a.remove {
+	background: #46b1e1 url(images/remove.png) no-repeat;
+}
+
+body table.cart td.actions .coupon, 
+body #content table.cart td.actions .coupon {
+	width: 40%;
+}
+
+body table.cart td.actions .coupon .input-text, 
+body #content table.cart td.actions .coupon .input-text {
+	background: #000;
+	color: #999;
+	border-top: 1px solid #333;
+	border-left: 1px solid #333;
+	border-bottom: 1px solid #000;
+	border-right: 1px solid #000;
+	width: 70%
+}
+
+body .quantity .plus:active,
+body .quantity .minus:active {
+	position: absolute;
+}
+
+body .quantity .plus:active {
+	top: 0;
+	left: 40px;
+}
+
+body .quantity .minus:active {
+	top: 15px;
+	left: 40px;
+}
+
+body .woocommerce_message, 
+body .woocommerce_error, 
+body .woocommerce_info {
+	margin: 20px 0 !important;
+}
+
+.woocommerce-checkout .checkout p {
+	display: none;
+}
+
+.woocommerce-checkout .checkout p.form-row {
+	display: inline;
+}
+
+.woocommerce-checkout .checkout .chzn-container {
+	float: left;
+	clear: both;
+}
+
+.woocommerce-checkout .checkout #billing_state_field {
+	margin-top: -30px;
+}
+
+.woocommerce-checkout .checkout #billing_state_field label {
+	padding-bottom: 5px;
+}
+
+#subscribe_to_newsletter_field br,
+#shiptobilling br {
+	display: none;
+}
+
+#order_review_heading {
+	margin-top: 30px;
+}
+
+body .checkout #shiptobilling {
+	margin-top: 10px;
+}
+
+body .checkout #shiptobilling label {
+	font-size: 1em;
+}
+
+body form .form-row label {
+	display: block;
+	clear: both;
+}
+
+body #searchform input[type="text"] {
+	width: 60%;
+	margin-right: 5px;
+}
+
+body #searchsubmit {
+	margin-top: 5px;
+	float: right;
+}
+
+body span.onsale {
+	background: #46b1e1;
+	background: -moz-linear-gradient(top,  #46b1e1 0%, #229bd2 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#46b1e1), color-stop(100%,#229bd2));
+	background: -webkit-linear-gradient(top,  #46b1e1 0%,#229bd2 100%);
+	background: -o-linear-gradient(top,  #46b1e1 0%,#229bd2 100%);
+	background: -ms-linear-gradient(top,  #46b1e1 0%,#229bd2 100%);
+	background: linear-gradient(to bottom,  #46b1e1 0%,#229bd2 100%);
+}
+
