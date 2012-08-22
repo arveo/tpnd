@@ -416,11 +416,14 @@ $j(document).ready(function(){
 	
 	
 	// TGS EDIT - Add chosen.js styling to select widget on shop page
+	// Add chosen classes to relevant dropdowns
 	$j('.widget_layered_nav #dropdown_layered_nav_brands').addClass('chzn-select')
 	$j('.widget_product_categories #dropdown_product_cat').addClass('chzn-select')
 	
+	// Call the chosen script
 	$j(".chzn-select").chosen();
 	
+	// Removed whitespace from subcat menu items
 	$j('#dropdown_product_cat').find('.level-1').each( function() {
 		var trimSelect = $j(this).text();
 		$j(this).text(trimSelect.trim()).trigger("liszt:updated");
@@ -433,5 +436,8 @@ $j(document).ready(function(){
 		console.log($j(this).text(trimSelect.trim()));
 	});
 	
-	
+	// Fixed multiple dropdown incorrectly stacking onto one another
+	$('.chzn-container').each(function(i){
+  		$(this).closest('div').css('z-index', 999-i);
+	});
 });
