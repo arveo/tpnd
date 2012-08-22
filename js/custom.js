@@ -393,6 +393,9 @@ $j(document).ready(function(){
         $image = $image.replace(/^.*\/|\.[^.]*$/g, '');
         $image = $image.split('-');
         $image = $image[0];
+		$image = $image.toLowerCase();
+		console.log($image);
+
 		
         if ($image == 'undefined' || $image =='') {
             $j('.car-choice').text('Other');
