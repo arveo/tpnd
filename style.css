@@ -15,11 +15,11 @@ html body {
 }
 
 ::-webkit-input-placeholder {
-   color: #535353;
+   color: #000;
 }
 
 :-moz-placeholder {  
-   color: #535353;  
+   color: #000;  
 }
 
 body .nav, body .top_right {
@@ -392,6 +392,10 @@ body .woocommerce_info {
 	margin: 20px 0 !important;
 }
 
+.chzn-container-single .chzn-search input {
+	color: #000;
+}
+
 .woocommerce-checkout .checkout p {
 	display: none;
 }
@@ -403,6 +407,7 @@ body .woocommerce_info {
 .woocommerce-checkout .checkout .chzn-container {
 	float: left;
 	clear: both;
+	width: 47% !important;
 }
 
 .woocommerce-checkout .checkout #billing_state_field {
@@ -474,4 +479,12 @@ body input.button.added::before,
 body #respond input#submit.added::before,
 body #content input.button.added::before {
 	background: url(images/success.png) no-repeat;
+}
+
+body input[type="text"], 
+body input[type="password"], 
+body select, 
+body textarea {
+	color: #fff;
+	border: 1px solid #333;
 }
