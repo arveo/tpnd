@@ -982,4 +982,10 @@ function add_child_scripts(){
 	
 }
 add_action('wp_enqueue_scripts', 'add_child_scripts');
+
+
+/* ================= $TGS Edit - Change number of product per page */
+// Display 16 products per page
+add_filter('loop_shop_per_page', create_function('$cols', 'return 28;'));
+
 ?>

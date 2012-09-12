@@ -38,6 +38,10 @@ body #footer, body #top_bar {
 	background: transparent;
 }
 
+body .page_caption h1 {
+	font-size: 50px;
+}
+
 body #fancybox-outer {
 	background-color: #000;
 }
@@ -111,13 +115,12 @@ body .upsells.products ul li.product img,
 	width: auto !important;	
 }
 
-.woocommerce-product-sidebar,
-.woocommerce-shop-sidebar {
+.sidebar{
 	opacity: 0.2;
 }
 
-.woocommerce-product-sidebar:hover,
-.woocommerce-shop-sidebar:hover {
+.page-id-18 .sidebar,
+.sidebar:hover {
 	opacity: 1;
 }
 
@@ -278,6 +281,7 @@ body #content div.product .woocommerce_tabs ul.tabs::before {
 
 /* Chosen.js overrides */
 .widget_layered_nav #dropdown_layered_nav_brands,
+.widget_layered_nav #dropdown_layered_nav_product-type,
 .widget_product_categories #dropdown_product_cat {
 	width: 100%;
 }
@@ -487,4 +491,74 @@ body select,
 body textarea {
 	color: #fff;
 	border: 1px solid #333;
+}
+
+body .wooslider {
+	border: none;
+}
+
+body .post_img img.frame {
+	border: 10px solid #fff;
+}
+
+.page-template-blog-php #footer .footer-search {
+	display: none;
+}
+
+strong, b {
+	color: #fff;
+}
+
+.bundled_product_summary {
+	clear: both;
+}
+
+.bundled_product_title,
+.bundled_product_title strong {
+	font-size: 16px;
+	text-transform: capitalize;
+	font-weight: normal;
+}
+
+.bundled_product_summary .images,
+.bundled_product_excerpt {
+	display: none;
+}
+
+body #payment {
+	background: transparent;
+	position: relative:
+	margin-top: 40px;
+}
+
+body #payment:before {
+	content: "Payment options";
+	position: relative;
+	top: 0px;
+	left: 0px;
+	font-size: 26px;
+	text-transform: uppercase;
+	font-family: 'Gnuolane';
+	color: #fff;
+}
+
+body #payment p {
+	display: block;
+}
+
+body #payment div.payment_box {
+	background: #fff;
+	color: #000;
+}
+
+body #payment div.payment_box:after {
+	border: 8px solid #fff;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-top-color: transparent;
+}
+
+body #payment div.form-row,
+body #payment ul.payment_methods {
+	border: none;
 }

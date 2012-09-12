@@ -417,7 +417,7 @@ $j(document).ready(function(){
 	
 	// TGS EDIT - Add chosen.js styling to select widget on shop page
 	// Add chosen classes to relevant dropdowns
-	$j('.widget_layered_nav #dropdown_layered_nav_brands').addClass('chzn-select')
+	$j('.widget_layered_nav #dropdown_layered_nav_brands, .widget_layered_nav #dropdown_layered_nav_product-type').addClass('chzn-select')
 	$j('.widget_product_categories #dropdown_product_cat').addClass('chzn-select')
 	
 	// Call the chosen script

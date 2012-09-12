@@ -10,7 +10,7 @@
 	<br class="clear"/>
 
 	<div id="footer">
-    <?php if (is_home() || is_front_page()) : ?>
+    <?php if (is_page('shop-wizard')) : ?>
     <div class="footer-search">
     	<h3>We Make Cars <span class="highlight">Awesome. Lets Start</span> With Yours.</h3>
         <div class="search-box">
