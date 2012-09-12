@@ -24,6 +24,7 @@ html body {
 
 body .nav, body .top_right {
 	margin-top: 70px;
+	float: right;
 }
 
 body.home #top_bar {
@@ -114,7 +115,7 @@ body .upsells.products ul li.product img,
 .related ul li.product img {
 	width: auto !important;	
 }
-
+/*
 .sidebar{
 	opacity: 0.2;
 }
@@ -123,7 +124,7 @@ body .upsells.products ul li.product img,
 .sidebar:hover {
 	opacity: 1;
 }
-
+*/
 body input[type="submit"], 
 body input[type="button"], 
 body a.button, a.comment-reply-link {
@@ -495,6 +496,36 @@ body textarea {
 
 body .wooslider {
 	border: none;
+	background: transparent;
+	margin: 0;
+}
+
+body.home .wooslider .wooslider-control-nav, body.home .wooslider .wooslider-direction-nav {
+	display: none !important;
+}
+
+body.home #page_content_wrapper .inner .sidebar_content {
+	width: 100%;
+}
+
+body.home #page_content_wrapper .sidebar .content .sidebar_widget > li {
+	padding: 20px;
+	margin-bottom: 20px;
+	width: 278px;
+	float: left;
+	border-right: 1px dashed #222;
+}
+
+body.home #page_content_wrapper .sidebar .content .sidebar_widget > li:first-child {
+	border-left: 1px dashed #222;
+}
+
+body.home #page_content_wrapper .sidebar .content .sidebar_widget li .widgettitle {
+	font-size: 32px;
+}
+
+body .wooslider .slides > li {
+	float: none;
 }
 
 body .post_img img.frame {
